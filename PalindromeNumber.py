@@ -11,19 +11,17 @@ def isPalindrome(x: int) -> bool:
     # This solution converts the number to a string in order to check
     # if it is palindrome or not. O(log n) solution.
     x_string = str(x)
-    is_palindrome = True
     left_to_count = len(x_string)
     low_i = 0
     high_i = len(x_string) - 1
 
     while (left_to_count > 1):
         if x_string[low_i] != x_string[high_i-low_i]:
-            is_palindrome = False
-            break
+            return False
         low_i += 1
         left_to_count -= 2
 
-    return is_palindrome
+    return True
 
 def isPalindrome_2(x: int) -> bool:
     # Creates a new number in reverse and compare it with
