@@ -9,7 +9,7 @@ class Node:
 
 def removeduplicates(LinkedList):
   """
-  Given the head of a sorted linked list, delete all duplicates such that each element appears only          once.   
+  Given the head of a sorted linked list, delete all duplicates such that each element appears only once.   
   Return the linked list sorted as well.
   """
   if (LinkedList == None):
